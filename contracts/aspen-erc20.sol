@@ -24,7 +24,7 @@ contract AspenToken is ERC20Capped {
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor ()  ERC20Capped(45000000000000000000000000) {
+    constructor () ERC20('Aspen','ASPEN')  ERC20Capped(45000000000000000000000000) {
         ERC20._mint(msg.sender, 15000000000000000000000000);
         owner = msg.sender;
     }
